@@ -1,0 +1,81 @@
+/* style.css */
+
+/* General background */
+body {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+}
+
+/* Input box style */
+.stTextInput>div>div>input {
+    border-radius: 8px;
+    border: 1px solid #dcdde1;
+    padding: 10px;
+}
+
+.stTextInput>div>label {
+    font-weight: 600;
+    color: #2f3640;
+}
+
+/* Button style */
+.stButton>button {
+    background-color: #4cd137;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.stButton>button:hover {
+    background-color: #44bd32;
+}
+
+/* Answer card */
+.answer-card {
+    background-color: #ffffffcc;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-top: 15px;
+    word-wrap: break-word;
+}
+
+/* Spinner animation */
+.spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4cd137;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
+}
+
+/* Online / Offline label colors */
+.online-label {
+    color: #3498db;
+    font-weight: bold;
+}
+
+.offline-label {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Card for toggle info */
+.info-card {
+    background-color: #ffffffcc;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    font-size: 14px;
+}
